@@ -1,0 +1,553 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 1680" font-family="monospace, Menlo, Consolas" font-size="11">
+  <style>
+    .layer-title { font-size: 16px; font-weight: bold; fill: #1a1a2e; }
+    .layer-subtitle { font-size: 11px; fill: #666; }
+    .key { stroke: #ccc; stroke-width: 1; rx: 4; ry: 4; }
+    .key-base { fill: #f8f9fa; }
+    .key-mod { fill: #e8f4fd; }
+    .key-thumb { fill: #fff3e0; }
+    .key-thumb-active { fill: #ffcc80; stroke: #f57c00; stroke-width: 2; }
+    .key-action { fill: #e8f5e9; }
+    .key-empty { fill: #f5f5f5; }
+    .key-danger { fill: #fce4ec; }
+    .key-bt { fill: #e0f2f1; }
+    .key-label { fill: #1a1a2e; font-size: 11px; text-anchor: middle; dominant-baseline: central; }
+    .key-sub { fill: #888; font-size: 8px; text-anchor: middle; }
+    .separator { stroke: #e0e0e0; stroke-width: 1; stroke-dasharray: 4,4; }
+  </style>
+
+  <rect width="1020" height="1680" fill="#fff"/>
+  <text x="510" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Miryoku Dvorak - Corne Wireless ZMK</text>
+  <text x="510" y="50" text-anchor="middle" font-size="11" fill="#888">Home Row Mods: CAGS (Ctrl, Alt, GUI, Shift) - Mac-optimized | Thumb: hold for layer, tap for key</text>
+
+  <!-- ==================== LAYER 0: BASE ==================== -->
+  <g transform="translate(20, 70)">
+    <text class="layer-title" x="0" y="15">BASE</text>
+    <text class="layer-subtitle" x="80" y="15">Dvorak + Home Row Mods</text>
+
+    <!-- Left hand top row -->
+    <rect class="key key-base" x="0" y="30" width="56" height="40"/>
+    <text class="key-label" x="28" y="50">'</text>
+    <rect class="key key-base" x="62" y="30" width="56" height="40"/>
+    <text class="key-label" x="90" y="50">,</text>
+    <rect class="key key-base" x="124" y="30" width="56" height="40"/>
+    <text class="key-label" x="152" y="50">.</text>
+    <rect class="key key-base" x="186" y="30" width="56" height="40"/>
+    <text class="key-label" x="214" y="50">P</text>
+    <rect class="key key-base" x="248" y="30" width="56" height="40"/>
+    <text class="key-label" x="276" y="50">Y</text>
+
+    <!-- Right hand top row -->
+    <rect class="key key-base" x="370" y="30" width="56" height="40"/>
+    <text class="key-label" x="398" y="50">F</text>
+    <rect class="key key-base" x="432" y="30" width="56" height="40"/>
+    <text class="key-label" x="460" y="50">G</text>
+    <rect class="key key-base" x="494" y="30" width="56" height="40"/>
+    <text class="key-label" x="522" y="50">C</text>
+    <rect class="key key-base" x="556" y="30" width="56" height="40"/>
+    <text class="key-label" x="584" y="50">R</text>
+    <rect class="key key-base" x="618" y="30" width="56" height="40"/>
+    <text class="key-label" x="646" y="50">L</text>
+
+    <!-- Left hand home row (mods) -->
+    <rect class="key key-mod" x="0" y="76" width="56" height="40"/>
+    <text class="key-label" x="28" y="91">A</text>
+    <text class="key-sub" x="28" y="106">CTL</text>
+    <rect class="key key-mod" x="62" y="76" width="56" height="40"/>
+    <text class="key-label" x="90" y="91">O</text>
+    <text class="key-sub" x="90" y="106">ALT</text>
+    <rect class="key key-mod" x="124" y="76" width="56" height="40"/>
+    <text class="key-label" x="152" y="91">E</text>
+    <text class="key-sub" x="152" y="106">GUI</text>
+    <rect class="key key-mod" x="186" y="76" width="56" height="40"/>
+    <text class="key-label" x="214" y="91">U</text>
+    <text class="key-sub" x="214" y="106">SFT</text>
+    <rect class="key key-base" x="248" y="76" width="56" height="40"/>
+    <text class="key-label" x="276" y="96">I</text>
+
+    <!-- Right hand home row (mods) -->
+    <rect class="key key-base" x="370" y="76" width="56" height="40"/>
+    <text class="key-label" x="398" y="96">D</text>
+    <rect class="key key-mod" x="432" y="76" width="56" height="40"/>
+    <text class="key-label" x="460" y="91">H</text>
+    <text class="key-sub" x="460" y="106">SFT</text>
+    <rect class="key key-mod" x="494" y="76" width="56" height="40"/>
+    <text class="key-label" x="522" y="91">T</text>
+    <text class="key-sub" x="522" y="106">GUI</text>
+    <rect class="key key-mod" x="556" y="76" width="56" height="40"/>
+    <text class="key-label" x="584" y="91">N</text>
+    <text class="key-sub" x="584" y="106">ALT</text>
+    <rect class="key key-mod" x="618" y="76" width="56" height="40"/>
+    <text class="key-label" x="646" y="91">S</text>
+    <text class="key-sub" x="646" y="106">CTL</text>
+
+    <!-- Left hand bottom row -->
+    <rect class="key key-base" x="0" y="122" width="56" height="40"/>
+    <text class="key-label" x="28" y="137">/</text>
+    <text class="key-sub" x="28" y="152">?</text>
+    <rect class="key key-base" x="62" y="122" width="56" height="40"/>
+    <text class="key-label" x="90" y="142">Q</text>
+    <rect class="key key-base" x="124" y="122" width="56" height="40"/>
+    <text class="key-label" x="152" y="142">J</text>
+    <rect class="key key-base" x="186" y="122" width="56" height="40"/>
+    <text class="key-label" x="214" y="142">K</text>
+    <rect class="key key-base" x="248" y="122" width="56" height="40"/>
+    <text class="key-label" x="276" y="142">X</text>
+
+    <!-- Right hand bottom row -->
+    <rect class="key key-base" x="370" y="122" width="56" height="40"/>
+    <text class="key-label" x="398" y="142">B</text>
+    <rect class="key key-base" x="432" y="122" width="56" height="40"/>
+    <text class="key-label" x="460" y="142">M</text>
+    <rect class="key key-base" x="494" y="122" width="56" height="40"/>
+    <text class="key-label" x="522" y="142">W</text>
+    <rect class="key key-base" x="556" y="122" width="56" height="40"/>
+    <text class="key-label" x="584" y="142">V</text>
+    <rect class="key key-base" x="618" y="122" width="56" height="40"/>
+    <text class="key-label" x="646" y="142">Z</text>
+
+    <!-- Left thumb cluster -->
+    <rect class="key key-thumb" x="124" y="172" width="56" height="40"/>
+    <text class="key-label" x="152" y="187">Esc</text>
+    <text class="key-sub" x="152" y="202">MEDIA</text>
+    <rect class="key key-thumb" x="186" y="172" width="56" height="40"/>
+    <text class="key-label" x="214" y="187">Space</text>
+    <text class="key-sub" x="214" y="202">NAV</text>
+    <rect class="key key-thumb" x="248" y="172" width="56" height="40"/>
+    <text class="key-label" x="276" y="187">Tab</text>
+    <text class="key-sub" x="276" y="202">MOUSE</text>
+
+    <!-- Right thumb cluster -->
+    <rect class="key key-thumb" x="370" y="172" width="56" height="40"/>
+    <text class="key-label" x="398" y="187">Enter</text>
+    <text class="key-sub" x="398" y="202">SYM</text>
+    <rect class="key key-thumb" x="432" y="172" width="56" height="40"/>
+    <text class="key-label" x="460" y="187">Bksp</text>
+    <text class="key-sub" x="460" y="202">NUM</text>
+    <rect class="key key-thumb" x="494" y="172" width="56" height="40"/>
+    <text class="key-label" x="522" y="187">Del</text>
+    <text class="key-sub" x="522" y="202">FUN</text>
+  </g>
+
+  <line class="separator" x1="20" y1="300" x2="700" y2="300"/>
+
+  <!-- ==================== LAYER 1: NAV ==================== -->
+  <g transform="translate(20, 310)">
+    <text class="layer-title" x="0" y="15">NAV</text>
+    <text class="layer-subtitle" x="50" y="15">hold Space</text>
+
+    <!-- Left top (clipboard mirror) -->
+    <rect class="key key-action" x="0" y="30" width="56" height="40"/>
+    <text class="key-label" x="28" y="50">Undo</text>
+    <rect class="key key-action" x="62" y="30" width="56" height="40"/>
+    <text class="key-label" x="90" y="50">Cut</text>
+    <rect class="key key-action" x="124" y="30" width="56" height="40"/>
+    <text class="key-label" x="152" y="50">Copy</text>
+    <rect class="key key-action" x="186" y="30" width="56" height="40"/>
+    <text class="key-label" x="214" y="50">Paste</text>
+    <rect class="key key-action" x="248" y="30" width="56" height="40"/>
+    <text class="key-label" x="276" y="50">Redo</text>
+    <!-- Right top -->
+    <rect class="key key-action" x="370" y="30" width="56" height="40"/>
+    <text class="key-label" x="398" y="50">Redo</text>
+    <rect class="key key-action" x="432" y="30" width="56" height="40"/>
+    <text class="key-label" x="460" y="50">Paste</text>
+    <rect class="key key-action" x="494" y="30" width="56" height="40"/>
+    <text class="key-label" x="522" y="50">Copy</text>
+    <rect class="key key-action" x="556" y="30" width="56" height="40"/>
+    <text class="key-label" x="584" y="50">Cut</text>
+    <rect class="key key-action" x="618" y="30" width="56" height="40"/>
+    <text class="key-label" x="646" y="50">Undo</text>
+
+    <!-- Left home (bare mods) -->
+    <rect class="key key-mod" x="0" y="76" width="56" height="40"/>
+    <text class="key-label" x="28" y="96">CTL</text>
+    <rect class="key key-mod" x="62" y="76" width="56" height="40"/>
+    <text class="key-label" x="90" y="96">ALT</text>
+    <rect class="key key-mod" x="124" y="76" width="56" height="40"/>
+    <text class="key-label" x="152" y="96">GUI</text>
+    <rect class="key key-mod" x="186" y="76" width="56" height="40"/>
+    <text class="key-label" x="214" y="96">SFT</text>
+    <rect class="key key-empty" x="248" y="76" width="56" height="40"/>
+    <!-- Right home (nav) -->
+    <rect class="key key-action" x="370" y="76" width="56" height="40"/>
+    <text class="key-label" x="398" y="96">CapsW</text>
+    <rect class="key key-base" x="432" y="76" width="56" height="40"/>
+    <text class="key-label" x="460" y="96">&#8592;</text>
+    <rect class="key key-base" x="494" y="76" width="56" height="40"/>
+    <text class="key-label" x="522" y="96">&#8595;</text>
+    <rect class="key key-base" x="556" y="76" width="56" height="40"/>
+    <text class="key-label" x="584" y="96">&#8593;</text>
+    <rect class="key key-base" x="618" y="76" width="56" height="40"/>
+    <text class="key-label" x="646" y="96">&#8594;</text>
+
+    <!-- Left bottom -->
+    <rect class="key key-empty" x="0" y="122" width="56" height="40"/><rect class="key key-empty" x="62" y="122" width="56" height="40"/><rect class="key key-empty" x="124" y="122" width="56" height="40"/><rect class="key key-empty" x="186" y="122" width="56" height="40"/><rect class="key key-empty" x="248" y="122" width="56" height="40"/>
+    <!-- Right bottom -->
+    <rect class="key key-base" x="370" y="122" width="56" height="40"/>
+    <text class="key-label" x="398" y="142">Ins</text>
+    <rect class="key key-base" x="432" y="122" width="56" height="40"/>
+    <text class="key-label" x="460" y="142">Home</text>
+    <rect class="key key-base" x="494" y="122" width="56" height="40"/>
+    <text class="key-label" x="522" y="142">PgDn</text>
+    <rect class="key key-base" x="556" y="122" width="56" height="40"/>
+    <text class="key-label" x="584" y="142">PgUp</text>
+    <rect class="key key-base" x="618" y="122" width="56" height="40"/>
+    <text class="key-label" x="646" y="142">End</text>
+
+    <!-- Thumbs -->
+    <rect class="key key-empty" x="124" y="172" width="56" height="40"/>
+    <rect class="key key-thumb-active" x="186" y="172" width="56" height="40"/>
+    <text class="key-label" x="214" y="192">Space</text>
+    <rect class="key key-empty" x="248" y="172" width="56" height="40"/>
+    <rect class="key key-thumb" x="370" y="172" width="56" height="40"/>
+    <text class="key-label" x="398" y="192">Enter</text>
+    <rect class="key key-thumb" x="432" y="172" width="56" height="40"/>
+    <text class="key-label" x="460" y="192">Bksp</text>
+    <rect class="key key-thumb" x="494" y="172" width="56" height="40"/>
+    <text class="key-label" x="522" y="192">Del</text>
+  </g>
+
+  <line class="separator" x1="20" y1="540" x2="700" y2="540"/>
+
+  <!-- ==================== LAYER 2: MOUSE ==================== -->
+  <g transform="translate(20, 550)">
+    <text class="layer-title" x="0" y="15">MOUSE</text>
+    <text class="layer-subtitle" x="70" y="15">hold Tab</text>
+
+    <rect class="key key-action" x="0" y="30" width="56" height="40"/>
+    <text class="key-label" x="28" y="50">Undo</text>
+    <rect class="key key-action" x="62" y="30" width="56" height="40"/>
+    <text class="key-label" x="90" y="50">Cut</text>
+    <rect class="key key-action" x="124" y="30" width="56" height="40"/>
+    <text class="key-label" x="152" y="50">Copy</text>
+    <rect class="key key-action" x="186" y="30" width="56" height="40"/>
+    <text class="key-label" x="214" y="50">Paste</text>
+    <rect class="key key-action" x="248" y="30" width="56" height="40"/>
+    <text class="key-label" x="276" y="50">Redo</text>
+    <rect class="key key-action" x="370" y="30" width="56" height="40"/>
+    <text class="key-label" x="398" y="50">Redo</text>
+    <rect class="key key-action" x="432" y="30" width="56" height="40"/>
+    <text class="key-label" x="460" y="50">Paste</text>
+    <rect class="key key-action" x="494" y="30" width="56" height="40"/>
+    <text class="key-label" x="522" y="50">Copy</text>
+    <rect class="key key-action" x="556" y="30" width="56" height="40"/>
+    <text class="key-label" x="584" y="50">Cut</text>
+    <rect class="key key-action" x="618" y="30" width="56" height="40"/>
+    <text class="key-label" x="646" y="50">Undo</text>
+
+    <rect class="key key-mod" x="0" y="76" width="56" height="40"/>
+    <text class="key-label" x="28" y="96">CTL</text>
+    <rect class="key key-mod" x="62" y="76" width="56" height="40"/>
+    <text class="key-label" x="90" y="96">ALT</text>
+    <rect class="key key-mod" x="124" y="76" width="56" height="40"/>
+    <text class="key-label" x="152" y="96">GUI</text>
+    <rect class="key key-mod" x="186" y="76" width="56" height="40"/>
+    <text class="key-label" x="214" y="96">SFT</text>
+    <rect class="key key-empty" x="248" y="76" width="56" height="40"/>
+    <rect class="key key-empty" x="370" y="76" width="56" height="40"/>
+    <rect class="key key-base" x="432" y="76" width="56" height="40"/>
+    <text class="key-label" x="460" y="96">M&#8592;</text>
+    <rect class="key key-base" x="494" y="76" width="56" height="40"/>
+    <text class="key-label" x="522" y="96">M&#8595;</text>
+    <rect class="key key-base" x="556" y="76" width="56" height="40"/>
+    <text class="key-label" x="584" y="96">M&#8593;</text>
+    <rect class="key key-base" x="618" y="76" width="56" height="40"/>
+    <text class="key-label" x="646" y="96">M&#8594;</text>
+
+    <rect class="key key-empty" x="0" y="122" width="56" height="40"/><rect class="key key-empty" x="62" y="122" width="56" height="40"/><rect class="key key-empty" x="124" y="122" width="56" height="40"/><rect class="key key-empty" x="186" y="122" width="56" height="40"/><rect class="key key-empty" x="248" y="122" width="56" height="40"/>
+    <rect class="key key-empty" x="370" y="122" width="56" height="40"/>
+    <rect class="key key-base" x="432" y="122" width="56" height="40"/>
+    <text class="key-label" x="460" y="142">S&#8592;</text>
+    <rect class="key key-base" x="494" y="122" width="56" height="40"/>
+    <text class="key-label" x="522" y="142">S&#8595;</text>
+    <rect class="key key-base" x="556" y="122" width="56" height="40"/>
+    <text class="key-label" x="584" y="142">S&#8593;</text>
+    <rect class="key key-base" x="618" y="122" width="56" height="40"/>
+    <text class="key-label" x="646" y="142">S&#8594;</text>
+
+    <rect class="key key-empty" x="124" y="172" width="56" height="40"/>
+    <rect class="key key-empty" x="186" y="172" width="56" height="40"/>
+    <rect class="key key-thumb-active" x="248" y="172" width="56" height="40"/>
+    <text class="key-label" x="276" y="192">Tab</text>
+    <rect class="key key-thumb" x="370" y="172" width="56" height="40"/>
+    <text class="key-label" x="398" y="192">MB2</text>
+    <rect class="key key-thumb" x="432" y="172" width="56" height="40"/>
+    <text class="key-label" x="460" y="192">MB1</text>
+    <rect class="key key-thumb" x="494" y="172" width="56" height="40"/>
+    <text class="key-label" x="522" y="192">MB3</text>
+  </g>
+
+  <line class="separator" x1="20" y1="780" x2="700" y2="780"/>
+
+  <!-- ==================== LAYER 3: MEDIA ==================== -->
+  <g transform="translate(20, 790)">
+    <text class="layer-title" x="0" y="15">MEDIA</text>
+    <text class="layer-subtitle" x="70" y="15">hold Esc</text>
+
+    <rect class="key key-danger" x="0" y="30" width="56" height="40"/>
+    <text class="key-label" x="28" y="50">Boot</text>
+    <rect class="key key-empty" x="62" y="30" width="56" height="40"/><rect class="key key-empty" x="124" y="30" width="56" height="40"/><rect class="key key-empty" x="186" y="30" width="56" height="40"/><rect class="key key-empty" x="248" y="30" width="56" height="40"/>
+    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/><rect class="key key-empty" x="618" y="30" width="56" height="40"/>
+
+    <rect class="key key-mod" x="0" y="76" width="56" height="40"/>
+    <text class="key-label" x="28" y="96">CTL</text>
+    <rect class="key key-mod" x="62" y="76" width="56" height="40"/>
+    <text class="key-label" x="90" y="96">ALT</text>
+    <rect class="key key-mod" x="124" y="76" width="56" height="40"/>
+    <text class="key-label" x="152" y="96">GUI</text>
+    <rect class="key key-mod" x="186" y="76" width="56" height="40"/>
+    <text class="key-label" x="214" y="96">SFT</text>
+    <rect class="key key-empty" x="248" y="76" width="56" height="40"/>
+    <rect class="key key-empty" x="370" y="76" width="56" height="40"/>
+    <rect class="key key-base" x="432" y="76" width="56" height="40"/>
+    <text class="key-label" x="460" y="96">Prev</text>
+    <rect class="key key-base" x="494" y="76" width="56" height="40"/>
+    <text class="key-label" x="522" y="96">Vol-</text>
+    <rect class="key key-base" x="556" y="76" width="56" height="40"/>
+    <text class="key-label" x="584" y="96">Vol+</text>
+    <rect class="key key-base" x="618" y="76" width="56" height="40"/>
+    <text class="key-label" x="646" y="96">Next</text>
+
+    <rect class="key key-empty" x="0" y="122" width="56" height="40"/><rect class="key key-empty" x="62" y="122" width="56" height="40"/><rect class="key key-empty" x="124" y="122" width="56" height="40"/><rect class="key key-empty" x="186" y="122" width="56" height="40"/><rect class="key key-empty" x="248" y="122" width="56" height="40"/>
+    <rect class="key key-bt" x="370" y="122" width="56" height="40"/>
+    <text class="key-label" x="398" y="142">OutTG</text>
+    <rect class="key key-bt" x="432" y="122" width="56" height="40"/>
+    <text class="key-label" x="460" y="142">BT 0</text>
+    <rect class="key key-bt" x="494" y="122" width="56" height="40"/>
+    <text class="key-label" x="522" y="142">BT 1</text>
+    <rect class="key key-bt" x="556" y="122" width="56" height="40"/>
+    <text class="key-label" x="584" y="142">BT 2</text>
+    <rect class="key key-bt" x="618" y="122" width="56" height="40"/>
+    <text class="key-label" x="646" y="142">BT 3</text>
+
+    <rect class="key key-thumb-active" x="124" y="172" width="56" height="40"/>
+    <text class="key-label" x="152" y="192">Esc</text>
+    <rect class="key key-empty" x="186" y="172" width="56" height="40"/>
+    <rect class="key key-empty" x="248" y="172" width="56" height="40"/>
+    <rect class="key key-thumb" x="370" y="172" width="56" height="40"/>
+    <text class="key-label" x="398" y="192">Stop</text>
+    <rect class="key key-thumb" x="432" y="172" width="56" height="40"/>
+    <text class="key-label" x="460" y="192">PP</text>
+    <rect class="key key-thumb" x="494" y="172" width="56" height="40"/>
+    <text class="key-label" x="522" y="192">Mute</text>
+  </g>
+
+  <line class="separator" x1="20" y1="1020" x2="700" y2="1020"/>
+
+  <!-- ==================== LAYER 4: NUM ==================== -->
+  <g transform="translate(20, 1030)">
+    <text class="layer-title" x="0" y="15">NUM</text>
+    <text class="layer-subtitle" x="50" y="15">hold Bksp</text>
+
+    <rect class="key key-base" x="0" y="30" width="56" height="40"/>
+    <text class="key-label" x="28" y="50">[</text>
+    <rect class="key key-base" x="62" y="30" width="56" height="40"/>
+    <text class="key-label" x="90" y="50">7</text>
+    <rect class="key key-base" x="124" y="30" width="56" height="40"/>
+    <text class="key-label" x="152" y="50">8</text>
+    <rect class="key key-base" x="186" y="30" width="56" height="40"/>
+    <text class="key-label" x="214" y="50">9</text>
+    <rect class="key key-base" x="248" y="30" width="56" height="40"/>
+    <text class="key-label" x="276" y="50">]</text>
+    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/><rect class="key key-empty" x="618" y="30" width="56" height="40"/>
+
+    <rect class="key key-base" x="0" y="76" width="56" height="40"/>
+    <text class="key-label" x="28" y="96">;</text>
+    <rect class="key key-base" x="62" y="76" width="56" height="40"/>
+    <text class="key-label" x="90" y="96">4</text>
+    <rect class="key key-base" x="124" y="76" width="56" height="40"/>
+    <text class="key-label" x="152" y="96">5</text>
+    <rect class="key key-base" x="186" y="76" width="56" height="40"/>
+    <text class="key-label" x="214" y="96">6</text>
+    <rect class="key key-base" x="248" y="76" width="56" height="40"/>
+    <text class="key-label" x="276" y="96">=</text>
+    <rect class="key key-empty" x="370" y="76" width="56" height="40"/>
+    <rect class="key key-mod" x="432" y="76" width="56" height="40"/>
+    <text class="key-label" x="460" y="96">SFT</text>
+    <rect class="key key-mod" x="494" y="76" width="56" height="40"/>
+    <text class="key-label" x="522" y="96">GUI</text>
+    <rect class="key key-mod" x="556" y="76" width="56" height="40"/>
+    <text class="key-label" x="584" y="96">ALT</text>
+    <rect class="key key-mod" x="618" y="76" width="56" height="40"/>
+    <text class="key-label" x="646" y="96">CTL</text>
+
+    <rect class="key key-base" x="0" y="122" width="56" height="40"/>
+    <text class="key-label" x="28" y="142">`</text>
+    <rect class="key key-base" x="62" y="122" width="56" height="40"/>
+    <text class="key-label" x="90" y="142">1</text>
+    <rect class="key key-base" x="124" y="122" width="56" height="40"/>
+    <text class="key-label" x="152" y="142">2</text>
+    <rect class="key key-base" x="186" y="122" width="56" height="40"/>
+    <text class="key-label" x="214" y="142">3</text>
+    <rect class="key key-base" x="248" y="122" width="56" height="40"/>
+    <text class="key-label" x="276" y="142">\</text>
+    <rect class="key key-empty" x="370" y="122" width="56" height="40"/><rect class="key key-empty" x="432" y="122" width="56" height="40"/><rect class="key key-empty" x="494" y="122" width="56" height="40"/><rect class="key key-empty" x="556" y="122" width="56" height="40"/><rect class="key key-empty" x="618" y="122" width="56" height="40"/>
+
+    <rect class="key key-thumb" x="124" y="172" width="56" height="40"/>
+    <text class="key-label" x="152" y="192">.</text>
+    <rect class="key key-thumb" x="186" y="172" width="56" height="40"/>
+    <text class="key-label" x="214" y="192">0</text>
+    <rect class="key key-thumb" x="248" y="172" width="56" height="40"/>
+    <text class="key-label" x="276" y="192">-</text>
+    <rect class="key key-empty" x="370" y="172" width="56" height="40"/>
+    <rect class="key key-thumb-active" x="432" y="172" width="56" height="40"/>
+    <text class="key-label" x="460" y="192">Bksp</text>
+    <rect class="key key-empty" x="494" y="172" width="56" height="40"/>
+  </g>
+
+  <line class="separator" x1="20" y1="1260" x2="700" y2="1260"/>
+
+  <!-- ==================== LAYER 5: SYM ==================== -->
+  <g transform="translate(20, 1270)">
+    <text class="layer-title" x="0" y="15">SYM</text>
+    <text class="layer-subtitle" x="50" y="15">hold Enter</text>
+
+    <rect class="key key-base" x="0" y="30" width="56" height="40"/>
+    <text class="key-label" x="28" y="50">{</text>
+    <rect class="key key-base" x="62" y="30" width="56" height="40"/>
+    <text class="key-label" x="90" y="50">&amp;</text>
+    <rect class="key key-base" x="124" y="30" width="56" height="40"/>
+    <text class="key-label" x="152" y="50">*</text>
+    <rect class="key key-base" x="186" y="30" width="56" height="40"/>
+    <text class="key-label" x="214" y="50">(</text>
+    <rect class="key key-base" x="248" y="30" width="56" height="40"/>
+    <text class="key-label" x="276" y="50">}</text>
+    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/><rect class="key key-empty" x="618" y="30" width="56" height="40"/>
+
+    <rect class="key key-base" x="0" y="76" width="56" height="40"/>
+    <text class="key-label" x="28" y="96">:</text>
+    <rect class="key key-base" x="62" y="76" width="56" height="40"/>
+    <text class="key-label" x="90" y="96">$</text>
+    <rect class="key key-base" x="124" y="76" width="56" height="40"/>
+    <text class="key-label" x="152" y="96">%</text>
+    <rect class="key key-base" x="186" y="76" width="56" height="40"/>
+    <text class="key-label" x="214" y="96">^</text>
+    <rect class="key key-base" x="248" y="76" width="56" height="40"/>
+    <text class="key-label" x="276" y="96">+</text>
+    <rect class="key key-empty" x="370" y="76" width="56" height="40"/>
+    <rect class="key key-mod" x="432" y="76" width="56" height="40"/>
+    <text class="key-label" x="460" y="96">SFT</text>
+    <rect class="key key-mod" x="494" y="76" width="56" height="40"/>
+    <text class="key-label" x="522" y="96">GUI</text>
+    <rect class="key key-mod" x="556" y="76" width="56" height="40"/>
+    <text class="key-label" x="584" y="96">ALT</text>
+    <rect class="key key-mod" x="618" y="76" width="56" height="40"/>
+    <text class="key-label" x="646" y="96">CTL</text>
+
+    <rect class="key key-base" x="0" y="122" width="56" height="40"/>
+    <text class="key-label" x="28" y="142">~</text>
+    <rect class="key key-base" x="62" y="122" width="56" height="40"/>
+    <text class="key-label" x="90" y="142">!</text>
+    <rect class="key key-base" x="124" y="122" width="56" height="40"/>
+    <text class="key-label" x="152" y="142">@</text>
+    <rect class="key key-base" x="186" y="122" width="56" height="40"/>
+    <text class="key-label" x="214" y="142">#</text>
+    <rect class="key key-base" x="248" y="122" width="56" height="40"/>
+    <text class="key-label" x="276" y="142">|</text>
+    <rect class="key key-empty" x="370" y="122" width="56" height="40"/><rect class="key key-empty" x="432" y="122" width="56" height="40"/><rect class="key key-empty" x="494" y="122" width="56" height="40"/><rect class="key key-empty" x="556" y="122" width="56" height="40"/><rect class="key key-empty" x="618" y="122" width="56" height="40"/>
+
+    <rect class="key key-thumb" x="124" y="172" width="56" height="40"/>
+    <text class="key-label" x="152" y="192">(</text>
+    <rect class="key key-thumb" x="186" y="172" width="56" height="40"/>
+    <text class="key-label" x="214" y="192">)</text>
+    <rect class="key key-thumb" x="248" y="172" width="56" height="40"/>
+    <text class="key-label" x="276" y="192">_</text>
+    <rect class="key key-thumb-active" x="370" y="172" width="56" height="40"/>
+    <text class="key-label" x="398" y="192">Enter</text>
+    <rect class="key key-empty" x="432" y="172" width="56" height="40"/>
+    <rect class="key key-empty" x="494" y="172" width="56" height="40"/>
+  </g>
+
+  <line class="separator" x1="20" y1="1500" x2="700" y2="1500"/>
+
+  <!-- ==================== LAYER 6: FUN ==================== -->
+  <g transform="translate(20, 1510)">
+    <text class="layer-title" x="0" y="15">FUN</text>
+    <text class="layer-subtitle" x="50" y="15">hold Del</text>
+
+    <rect class="key key-base" x="0" y="30" width="56" height="40"/>
+    <text class="key-label" x="28" y="50">F12</text>
+    <rect class="key key-base" x="62" y="30" width="56" height="40"/>
+    <text class="key-label" x="90" y="50">F7</text>
+    <rect class="key key-base" x="124" y="30" width="56" height="40"/>
+    <text class="key-label" x="152" y="50">F8</text>
+    <rect class="key key-base" x="186" y="30" width="56" height="40"/>
+    <text class="key-label" x="214" y="50">F9</text>
+    <rect class="key key-base" x="248" y="30" width="56" height="40"/>
+    <text class="key-label" x="276" y="50">PrtSc</text>
+    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/><rect class="key key-empty" x="618" y="30" width="56" height="40"/>
+
+    <rect class="key key-base" x="0" y="76" width="56" height="40"/>
+    <text class="key-label" x="28" y="96">F11</text>
+    <rect class="key key-base" x="62" y="76" width="56" height="40"/>
+    <text class="key-label" x="90" y="96">F4</text>
+    <rect class="key key-base" x="124" y="76" width="56" height="40"/>
+    <text class="key-label" x="152" y="96">F5</text>
+    <rect class="key key-base" x="186" y="76" width="56" height="40"/>
+    <text class="key-label" x="214" y="96">F6</text>
+    <rect class="key key-base" x="248" y="76" width="56" height="40"/>
+    <text class="key-label" x="276" y="96">ScrLk</text>
+    <rect class="key key-empty" x="370" y="76" width="56" height="40"/>
+    <rect class="key key-mod" x="432" y="76" width="56" height="40"/>
+    <text class="key-label" x="460" y="96">SFT</text>
+    <rect class="key key-mod" x="494" y="76" width="56" height="40"/>
+    <text class="key-label" x="522" y="96">GUI</text>
+    <rect class="key key-mod" x="556" y="76" width="56" height="40"/>
+    <text class="key-label" x="584" y="96">ALT</text>
+    <rect class="key key-mod" x="618" y="76" width="56" height="40"/>
+    <text class="key-label" x="646" y="96">CTL</text>
+
+    <rect class="key key-base" x="0" y="122" width="56" height="40"/>
+    <text class="key-label" x="28" y="142">F10</text>
+    <rect class="key key-base" x="62" y="122" width="56" height="40"/>
+    <text class="key-label" x="90" y="142">F1</text>
+    <rect class="key key-base" x="124" y="122" width="56" height="40"/>
+    <text class="key-label" x="152" y="142">F2</text>
+    <rect class="key key-base" x="186" y="122" width="56" height="40"/>
+    <text class="key-label" x="214" y="142">F3</text>
+    <rect class="key key-base" x="248" y="122" width="56" height="40"/>
+    <text class="key-label" x="276" y="142">Pause</text>
+    <rect class="key key-empty" x="370" y="122" width="56" height="40"/><rect class="key key-empty" x="432" y="122" width="56" height="40"/><rect class="key key-empty" x="494" y="122" width="56" height="40"/><rect class="key key-empty" x="556" y="122" width="56" height="40"/><rect class="key key-empty" x="618" y="122" width="56" height="40"/>
+
+    <rect class="key key-thumb" x="124" y="172" width="56" height="40"/>
+    <text class="key-label" x="152" y="192">App</text>
+    <rect class="key key-thumb" x="186" y="172" width="56" height="40"/>
+    <text class="key-label" x="214" y="192">Space</text>
+    <rect class="key key-thumb" x="248" y="172" width="56" height="40"/>
+    <text class="key-label" x="276" y="192">Tab</text>
+    <rect class="key key-empty" x="370" y="172" width="56" height="40"/>
+    <rect class="key key-empty" x="432" y="172" width="56" height="40"/>
+    <rect class="key key-thumb-active" x="494" y="172" width="56" height="40"/>
+    <text class="key-label" x="522" y="192">Del</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(720, 70)">
+    <text font-size="13" font-weight="bold" fill="#1a1a2e" x="0" y="15">Legend</text>
+    <rect class="key key-base" x="0" y="28" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="40">Alpha / Key</text>
+    <rect class="key key-mod" x="0" y="50" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="62">Modifier</text>
+    <rect class="key key-thumb" x="0" y="72" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="84">Thumb key</text>
+    <rect class="key key-thumb-active" x="0" y="94" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="106">Held thumb</text>
+    <rect class="key key-action" x="0" y="116" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="128">Clipboard</text>
+    <rect class="key key-bt" x="0" y="138" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="150">Bluetooth</text>
+    <rect class="key key-danger" x="0" y="160" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="172">Bootloader</text>
+    <rect class="key key-empty" x="0" y="182" width="20" height="14"/>
+    <text font-size="10" fill="#444" x="26" y="194">Empty</text>
+
+    <text font-size="10" fill="#666" x="0" y="230">M = Mouse move</text>
+    <text font-size="10" fill="#666" x="0" y="244">S = Scroll</text>
+    <text font-size="10" fill="#666" x="0" y="258">MB = Mouse btn</text>
+    <text font-size="10" fill="#666" x="0" y="272">PP = Play/Pause</text>
+    <text font-size="10" fill="#666" x="0" y="286">CapsW = Caps Word</text>
+    <text font-size="10" fill="#666" x="0" y="300">OutTG = USB/BT</text>
+    <text font-size="10" fill="#666" x="0" y="328">Clipboard: Cmd</text>
+  </g>
+</svg>
