@@ -69,7 +69,7 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &none           &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT &msc SCRL_DOWN
+&kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &none           &msc SCRL_RIGHT &mmv MOVE_UP    &msc SCRL_LEFT  &msc SCRL_DOWN
 &kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_UP
 &none      &none      &none       &none       &none        &kp U_REDO      &kp U_PSTE      &kp U_COPY      &kp U_CUT       &kp U_UNDO
                       &none       &none       &none        &mkp MB2        &mkp MB1        &mkp MB3
