@@ -7,7 +7,7 @@ See `keymap-reference.svg` for the full visual keymap.
 ## Notable changes vs. standard Dvorak + Miryoku
 
 ### Base layer (vs. standard Dvorak)
-- **`/` replaces `;`** on the bottom-left pinkie. `;` lives on NUM instead. `/` is used far more often in programming than `;` in English prose, and this position is more reachable than the Dvorak-standard bottom-right pinkie.
+- **`/` replaces `;`** on the bottom-left pinkie. `;` lives on NUM instead. In the era of AI-assisted programming, `/` is used far more often (closing tags, paths, regex, slash commands) than `;`, and this position is more reachable than the Dvorak-standard bottom-right pinkie.
 
 ### Home row mods (vs. Miryoku GACS)
 - **CAGS order** (Ctrl, Alt, GUI, Shift from pinkie → index) instead of Miryoku's default **GACS** (GUI, Alt, Ctrl, Shift). On macOS, Cmd is the primary modifier (copy/paste/tab switch/etc.), so it sits on the stronger middle finger rather than the pinkie.
