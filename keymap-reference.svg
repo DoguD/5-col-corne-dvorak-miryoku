@@ -288,7 +288,9 @@
     <rect class="key key-danger" x="0" y="30" width="56" height="40"/>
     <text class="key-label" x="28" y="50">Boot</text>
     <rect class="key key-empty" x="62" y="30" width="56" height="40"/><rect class="key key-empty" x="124" y="30" width="56" height="40"/><rect class="key key-empty" x="186" y="30" width="56" height="40"/><rect class="key key-empty" x="248" y="30" width="56" height="40"/>
-    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/><rect class="key key-empty" x="618" y="30" width="56" height="40"/>
+    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/>
+    <rect class="key key-danger" x="618" y="30" width="56" height="40"/>
+    <text class="key-label" x="646" y="50">Off</text>
 
     <rect class="key key-mod" x="0" y="76" width="56" height="40"/>
     <text class="key-label" x="28" y="96">CTL</text>
@@ -538,7 +540,7 @@
     <rect class="key key-bt" x="0" y="138" width="20" height="14"/>
     <text font-size="10" fill="#444" x="26" y="150">Bluetooth</text>
     <rect class="key key-danger" x="0" y="160" width="20" height="14"/>
-    <text font-size="10" fill="#444" x="26" y="172">Bootloader</text>
+    <text font-size="10" fill="#444" x="26" y="172">Boot / Off</text>
     <rect class="key key-empty" x="0" y="182" width="20" height="14"/>
     <text font-size="10" fill="#444" x="26" y="194">Empty</text>
 

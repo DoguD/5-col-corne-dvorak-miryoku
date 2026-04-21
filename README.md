@@ -35,6 +35,10 @@ Redo  Pste Cpy   Cut   Undo
 ```
 Superscripts show the underlying keycode: the physical key labeled "scroll up" fires `SCRL_DOWN` (and similarly for L/R), so with macOS natural scrolling enabled the content moves in the intuitive direction. Disable this compensation by reverting the swap if you use reverse scrolling.
 
+### Power
+- **Deep sleep enabled** (`CONFIG_ZMK_SLEEP=y`), default 15-minute idle timeout. First keypress after wake may be lost while BT re-advertises.
+- **Manual soft-off** on MEDIA right-top-pinkie (`&soft_off`) — mirrors the bootloader key on the left. Hold `Esc` to enter MEDIA, tap the pinkie to power down. Wake by pressing any key on the left half (the master).
+
 ### What's unchanged from Miryoku
 - 7-layer structure (BASE / NAV / MOUSE / MEDIA / NUM / SYM / FUN) with layer-tap on the six thumb keys.
 - Right-hand primary layers (NAV/MOUSE/MEDIA); left-hand primary layers (SYM/NUM/FUN).
