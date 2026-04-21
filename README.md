@@ -35,6 +35,9 @@ Redo  Pste Cpy   Cut   Undo
 ```
 Superscripts show the underlying keycode: the physical key labeled "scroll up" fires `SCRL_DOWN` (and similarly for L/R), so with macOS natural scrolling enabled the content moves in the intuitive direction. Disable this compensation by reverting the swap if you use reverse scrolling.
 
+### Combos
+- **Both shifts → Caps Lock.** Press the two home-row shift keys (positions 13 and 16 — the index-finger home keys on both hands) within 50 ms to toggle caps lock. Scoped to BASE only so it doesn't fire on sub-layers. `caps_word` is still available on NAV if you want per-word capitalization.
+
 ### Power
 - **Deep sleep enabled** (`CONFIG_ZMK_SLEEP=y`), default 15-minute idle timeout. First keypress after wake may be lost while BT re-advertises.
 - **Manual soft-off** on MEDIA right-top-pinkie (`&soft_off`) — mirrors the bootloader key on the left. Hold `Esc` to enter MEDIA, tap the pinkie to power down. Wake by pressing any key on the left half (the master).
