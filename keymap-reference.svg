@@ -147,17 +147,8 @@
     <text class="key-label" x="214" y="50">Home</text>
     <rect class="key key-base" x="248" y="30" width="56" height="40"/>
     <text class="key-label" x="276" y="50">Ins</text>
-    <!-- Right top (clipboard mirror) -->
-    <rect class="key key-action" x="370" y="30" width="56" height="40"/>
-    <text class="key-label" x="398" y="50">Redo</text>
-    <rect class="key key-action" x="432" y="30" width="56" height="40"/>
-    <text class="key-label" x="460" y="50">Paste</text>
-    <rect class="key key-action" x="494" y="30" width="56" height="40"/>
-    <text class="key-label" x="522" y="50">Copy</text>
-    <rect class="key key-action" x="556" y="30" width="56" height="40"/>
-    <text class="key-label" x="584" y="50">Cut</text>
-    <rect class="key key-action" x="618" y="30" width="56" height="40"/>
-    <text class="key-label" x="646" y="50">Undo</text>
+    <!-- Right top -->
+    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/><rect class="key key-empty" x="618" y="30" width="56" height="40"/>
 
     <!-- Left home (inverted-T: PgDn, RIGHT, DOWN, LEFT, CapsW) -->
     <rect class="key key-base" x="0" y="76" width="56" height="40"/>
@@ -192,8 +183,17 @@
     <text class="key-label" x="214" y="142">Paste</text>
     <rect class="key key-action" x="248" y="122" width="56" height="40"/>
     <text class="key-label" x="276" y="142">Redo</text>
-    <!-- Right bottom -->
-    <rect class="key key-empty" x="370" y="122" width="56" height="40"/><rect class="key key-empty" x="432" y="122" width="56" height="40"/><rect class="key key-empty" x="494" y="122" width="56" height="40"/><rect class="key key-empty" x="556" y="122" width="56" height="40"/><rect class="key key-empty" x="618" y="122" width="56" height="40"/>
+    <!-- Right bottom (clipboard mirror) -->
+    <rect class="key key-action" x="370" y="122" width="56" height="40"/>
+    <text class="key-label" x="398" y="142">Redo</text>
+    <rect class="key key-action" x="432" y="122" width="56" height="40"/>
+    <text class="key-label" x="460" y="142">Paste</text>
+    <rect class="key key-action" x="494" y="122" width="56" height="40"/>
+    <text class="key-label" x="522" y="142">Copy</text>
+    <rect class="key key-action" x="556" y="122" width="56" height="40"/>
+    <text class="key-label" x="584" y="142">Cut</text>
+    <rect class="key key-action" x="618" y="122" width="56" height="40"/>
+    <text class="key-label" x="646" y="142">Undo</text>
 
     <!-- Thumbs -->
     <rect class="key key-thumb" x="124" y="172" width="56" height="40"/>
@@ -224,16 +224,7 @@
     <rect class="key key-base" x="186" y="30" width="56" height="40"/>
     <text class="key-label" x="214" y="50">S&#8592;</text>
     <rect class="key key-empty" x="248" y="30" width="56" height="40"/>
-    <rect class="key key-action" x="370" y="30" width="56" height="40"/>
-    <text class="key-label" x="398" y="50">Redo</text>
-    <rect class="key key-action" x="432" y="30" width="56" height="40"/>
-    <text class="key-label" x="460" y="50">Paste</text>
-    <rect class="key key-action" x="494" y="30" width="56" height="40"/>
-    <text class="key-label" x="522" y="50">Copy</text>
-    <rect class="key key-action" x="556" y="30" width="56" height="40"/>
-    <text class="key-label" x="584" y="50">Cut</text>
-    <rect class="key key-action" x="618" y="30" width="56" height="40"/>
-    <text class="key-label" x="646" y="50">Undo</text>
+    <rect class="key key-empty" x="370" y="30" width="56" height="40"/><rect class="key key-empty" x="432" y="30" width="56" height="40"/><rect class="key key-empty" x="494" y="30" width="56" height="40"/><rect class="key key-empty" x="556" y="30" width="56" height="40"/><rect class="key key-empty" x="618" y="30" width="56" height="40"/>
 
     <rect class="key key-base" x="0" y="76" width="56" height="40"/>
     <text class="key-label" x="28" y="96">S&#8593;</text>
@@ -264,7 +255,16 @@
     <text class="key-label" x="214" y="142">Paste</text>
     <rect class="key key-action" x="248" y="122" width="56" height="40"/>
     <text class="key-label" x="276" y="142">Redo</text>
-    <rect class="key key-empty" x="370" y="122" width="56" height="40"/><rect class="key key-empty" x="432" y="122" width="56" height="40"/><rect class="key key-empty" x="494" y="122" width="56" height="40"/><rect class="key key-empty" x="556" y="122" width="56" height="40"/><rect class="key key-empty" x="618" y="122" width="56" height="40"/>
+    <rect class="key key-action" x="370" y="122" width="56" height="40"/>
+    <text class="key-label" x="398" y="142">Redo</text>
+    <rect class="key key-action" x="432" y="122" width="56" height="40"/>
+    <text class="key-label" x="460" y="142">Paste</text>
+    <rect class="key key-action" x="494" y="122" width="56" height="40"/>
+    <text class="key-label" x="522" y="142">Copy</text>
+    <rect class="key key-action" x="556" y="122" width="56" height="40"/>
+    <text class="key-label" x="584" y="142">Cut</text>
+    <rect class="key key-action" x="618" y="122" width="56" height="40"/>
+    <text class="key-label" x="646" y="142">Undo</text>
 
     <rect class="key key-thumb" x="124" y="172" width="56" height="40"/>
     <text class="key-label" x="152" y="192">MB3</text>

@@ -69,9 +69,9 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-&kp PG_UP  &kp END    &kp UP      &kp HOME    &kp INS      &kp U_REDO   &kp U_PSTE  &kp U_COPY  &kp U_CUT   &kp U_UNDO
+&kp PG_UP  &kp END    &kp UP      &kp HOME    &kp INS      &none        &none       &none       &none       &none
 &kp PG_DN  &kp RIGHT  &kp DOWN    &kp LEFT    &caps_word   &none        &kp RSHFT   &kp RGUI    &kp RALT    &kp RCTRL
-&kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &none        &none       &none       &none       &none
+&kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &kp U_REDO   &kp U_PSTE  &kp U_COPY  &kp U_CUT   &kp U_UNDO
                       &kp DEL     &kp BSPC    &kp RET      &none        &none       &none
             >;
         };
@@ -79,9 +79,9 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT &none        &kp U_REDO   &kp U_PSTE      &kp U_COPY      &kp U_CUT  &kp U_UNDO
+&msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT &none        &none        &none           &none           &none      &none
 &msc SCRL_UP    &mmv MOVE_RIGHT &mmv MOVE_DOWN  &mmv MOVE_LEFT  &none        &none        &kp RSHFT       &kp RGUI        &kp RALT   &kp RCTRL
-&kp U_UNDO      &kp U_CUT       &kp U_COPY      &kp U_PSTE      &kp U_REDO   &none        &none           &none           &none      &none
+&kp U_UNDO      &kp U_CUT       &kp U_COPY      &kp U_PSTE      &kp U_REDO   &kp U_REDO   &kp U_PSTE      &kp U_COPY      &kp U_CUT  &kp U_UNDO
                                 &mkp MB3        &mkp MB1        &mkp MB2     &none        &none           &none
             >;
         };
