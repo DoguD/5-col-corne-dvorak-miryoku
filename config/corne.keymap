@@ -62,27 +62,27 @@
 &kp SQT       &kp COMMA     &kp DOT       &kp P         &kp Y          &kp F        &kp G         &kp C         &kp R        &kp L
 &hm LCTRL A   &hm LALT O    &hm LGUI E    &hm LSHFT U   &kp I          &kp D        &hm RSHFT H   &hm RGUI T    &hm RALT N   &hm RCTRL S
 &kp FSLH      &kp Q         &kp J         &kp K         &kp X          &kp B        &kp M         &kp W         &kp V        &kp Z
-                            &lt MEDIA ESC &lt NAV SPACE &lt MOUSE TAB  &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
+                            &lt MEDIA ESC &lt NUM SPACE &lt SYM TAB    &lt MOUSE RET &lt NAV BSPC  &lt FUN DEL
             >;
         };
 
         nav_layer {
             display-name = "Nav";
             bindings = <
-&kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &kp INS      &kp HOME    &kp UP      &kp END     &kp PG_UP
-&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &caps_word   &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN
-&none      &none      &none       &none       &none        &kp U_REDO   &kp U_PSTE  &kp U_COPY  &kp U_CUT   &kp U_UNDO
-                      &none       &none       &none        &kp RET      &kp BSPC    &kp DEL
+&kp PG_UP  &kp END    &kp UP      &kp HOME    &kp INS      &kp U_REDO   &kp U_PSTE  &kp U_COPY  &kp U_CUT   &kp U_UNDO
+&kp PG_DN  &kp RIGHT  &kp DOWN    &kp LEFT    &caps_word   &none        &kp RSHFT   &kp RGUI    &kp RALT    &kp RCTRL
+&kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &none        &none       &none       &none       &none
+                      &kp DEL     &kp BSPC    &kp RET      &none        &none       &none
             >;
         };
 
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &none           &msc SCRL_RIGHT &mmv MOVE_UP    &msc SCRL_LEFT  &msc SCRL_DOWN
-&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_UP
-&none      &none      &none       &none       &none        &kp U_REDO      &kp U_PSTE      &kp U_COPY      &kp U_CUT       &kp U_UNDO
-                      &none       &none       &none        &mkp MB2        &mkp MB1        &mkp MB3
+&msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT &none        &kp U_REDO   &kp U_PSTE      &kp U_COPY      &kp U_CUT  &kp U_UNDO
+&msc SCRL_UP    &mmv MOVE_RIGHT &mmv MOVE_DOWN  &mmv MOVE_LEFT  &none        &none        &kp RSHFT       &kp RGUI        &kp RALT   &kp RCTRL
+&kp U_UNDO      &kp U_CUT       &kp U_COPY      &kp U_PSTE      &kp U_REDO   &none        &none           &none           &none      &none
+                                &mkp MB3        &mkp MB1        &mkp MB2     &none        &none           &none
             >;
         };
 
@@ -99,20 +99,20 @@
         num_layer {
             display-name = "Num";
             bindings = <
-&kp LBKT   &kp N7     &kp N8      &kp N9      &kp RBKT     &none       &none       &none       &none      &none
-&kp SEMI   &kp N4     &kp N5      &kp N6      &kp EQUAL    &none       &kp RSHFT   &kp RGUI    &kp RALT   &kp RCTRL
-&kp GRAVE  &kp N1     &kp N2      &kp N3      &kp BSLH     &none       &none       &none       &none      &none
-                      &kp DOT     &kp N0      &kp MINUS    &none       &none       &none
+&none      &none      &none       &none       &none        &kp RBKT    &kp N9      &kp N8      &kp N7     &kp LBKT
+&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &kp EQUAL   &kp N6      &kp N5      &kp N4     &kp SEMI
+&none      &none      &none       &none       &none        &kp BSLH    &kp N3      &kp N2      &kp N1     &kp GRAVE
+                      &none       &none       &none        &kp MINUS   &kp N0      &kp DOT
             >;
         };
 
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp LBRC   &kp AMPS   &kp ASTRK   &kp LPAR    &kp RBRC     &none       &none       &none       &none      &none
-&kp COLON  &kp DLLR   &kp PRCNT   &kp CARET   &kp PLUS     &none       &kp RSHFT   &kp RGUI    &kp RALT   &kp RCTRL
-&kp TILDE  &kp EXCL   &kp AT      &kp HASH    &kp PIPE     &none       &none       &none       &none      &none
-                      &kp LPAR    &kp RPAR    &kp UNDER    &none       &none       &none
+&none      &none      &none       &none       &none        &kp RBRC    &kp LPAR    &kp ASTRK   &kp AMPS   &kp LBRC
+&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &kp PLUS    &kp CARET   &kp PRCNT   &kp DLLR   &kp COLON
+&none      &none      &none       &none       &none        &kp PIPE    &kp HASH    &kp AT      &kp EXCL   &kp TILDE
+                      &none       &none       &none        &kp UNDER   &kp RPAR    &kp LPAR
             >;
         };
 
