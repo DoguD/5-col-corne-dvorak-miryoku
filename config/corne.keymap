@@ -32,13 +32,39 @@
     };
 
     behaviors {
-        hm: homerow_mods {
+        // Positional homerow mods: only trigger as mod when paired with a
+        // key on the OPPOSITE hand. Stops same-hand rolls (e.g. typing
+        // "as", "th") from misfiring as Ctrl/Alt/GUI/Shift.
+        hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <
+                5  6  7  8  9
+                15 16 17 18 19
+                25 26 27 28 29
+                33 34 35
+            >;
+            bindings = <&kp>, <&kp>;
+        };
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <
+                0  1  2  3  4
+                10 11 12 13 14
+                20 21 22 23 24
+                30 31 32
+            >;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -60,7 +86,7 @@
             display-name = "Base";
             bindings = <
 &kp SQT       &kp COMMA     &kp DOT       &kp P         &kp Y          &kp F        &kp G         &kp C         &kp R        &kp L
-&hm LCTRL A   &hm LALT O    &hm LGUI E    &hm LSHFT U   &kp I          &kp D        &hm RSHFT H   &hm RGUI T    &hm RALT N   &hm RCTRL S
+&hml LCTRL A  &hml LALT O   &hml LGUI E   &hml LSHFT U  &kp I          &kp D        &hmr RSHFT H  &hmr RGUI T   &hmr RALT N  &hmr RCTRL S
 &kp FSLH      &kp Q         &kp J         &kp K         &kp X          &kp B        &kp M         &kp W         &kp V        &kp Z
                             &lt MEDIA ESC &lt NUM SPACE &lt SYM TAB    &lt MOUSE RET &lt NAV BSPC  &lt FUN DEL
             >;
@@ -69,20 +95,20 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-&kp PG_UP  &kp END    &kp UP      &kp HOME    &kp INS      &none        &none       &none       &none       &none
-&kp PG_DN  &kp RIGHT  &kp DOWN    &kp LEFT    &caps_word   &none        &kp RSHFT   &kp RGUI    &kp RALT    &kp RCTRL
+&kp INS    &kp HOME   &kp UP      &kp END     &kp PG_UP    &none        &none       &none       &none       &none
+&caps_word &kp LEFT   &kp DOWN    &kp RIGHT   &kp PG_DN    &none        &kp RSHFT   &kp RGUI    &kp RALT    &kp RCTRL
 &kp U_UNDO &kp U_CUT  &kp U_COPY  &kp U_PSTE  &kp U_REDO   &kp U_REDO   &kp U_PSTE  &kp U_COPY  &kp U_CUT   &kp U_UNDO
-                      &kp DEL     &kp BSPC    &kp RET      &none        &none       &none
+                      &kp RET     &kp BSPC    &kp DEL      &none        &none       &none
             >;
         };
 
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&msc SCRL_DOWN  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT &none        &none        &none           &none           &none      &none
-&msc SCRL_UP    &mmv MOVE_RIGHT &mmv MOVE_DOWN  &mmv MOVE_LEFT  &none        &none        &kp RSHFT       &kp RGUI        &kp RALT   &kp RCTRL
-&kp U_UNDO      &kp U_CUT       &kp U_COPY      &kp U_PSTE      &kp U_REDO   &kp U_REDO   &kp U_PSTE      &kp U_COPY      &kp U_CUT  &kp U_UNDO
-                                &mkp MB3        &mkp MB1        &mkp MB2     &none        &none           &none
+&none           &msc SCRL_RIGHT &mmv MOVE_UP    &msc SCRL_LEFT  &msc SCRL_DOWN  &none        &none           &none           &none      &none
+&none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_UP    &none        &kp RSHFT       &kp RGUI        &kp RALT   &kp RCTRL
+&kp U_UNDO      &kp U_CUT       &kp U_COPY      &kp U_PSTE      &kp U_REDO      &kp U_REDO   &kp U_PSTE      &kp U_COPY      &kp U_CUT  &kp U_UNDO
+                                &mkp MB2        &mkp MB1        &mkp MB3        &none        &none           &none
             >;
         };
 
@@ -99,9 +125,9 @@
         num_layer {
             display-name = "Num";
             bindings = <
-&none      &none      &none       &none       &none        &kp RBKT    &kp N9      &kp N8      &kp N7     &kp LBKT
-&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &kp EQUAL   &kp N6      &kp N5      &kp N4     &kp SEMI
-&none      &none      &none       &none       &none        &kp BSLH    &kp N3      &kp N2      &kp N1     &kp GRAVE
+&none      &none      &none       &none       &none        &kp LBKT    &kp N7      &kp N8      &kp N9     &kp RBKT
+&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &kp SEMI    &kp N4      &kp N5      &kp N6     &kp EQUAL
+&none      &none      &none       &none       &none        &kp GRAVE   &kp N1      &kp N2      &kp N3     &kp BSLH
                       &none       &none       &none        &kp MINUS   &kp N0      &kp DOT
             >;
         };
@@ -109,10 +135,10 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-&none      &none      &none       &none       &none        &kp RBRC    &kp LPAR    &kp ASTRK   &kp AMPS   &kp LBRC
-&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &kp PLUS    &kp CARET   &kp PRCNT   &kp DLLR   &kp COLON
-&none      &none      &none       &none       &none        &kp PIPE    &kp HASH    &kp AT      &kp EXCL   &kp TILDE
-                      &none       &none       &none        &kp UNDER   &kp RPAR    &kp LPAR
+&none      &none      &none       &none       &none        &kp LBRC    &kp AMPS    &kp ASTRK   &kp LPAR   &kp RBRC
+&kp LCTRL  &kp LALT   &kp LGUI    &kp LSHFT   &none        &kp COLON   &kp DLLR    &kp PRCNT   &kp CARET  &kp PLUS
+&none      &none      &none       &none       &none        &kp TILDE   &kp EXCL    &kp AT      &kp HASH   &kp PIPE
+                      &none       &none       &none        &kp UNDER   &kp LPAR    &kp RPAR
             >;
         };
 
